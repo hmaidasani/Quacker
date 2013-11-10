@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  | <div id="login">
+  h2 Login
+  | <form action="/login" method="post">
+  | </form>
+  h3= login_message
+  h2 Sign Up
+  | <form action="/signup" method="post">
+  | <input type="email" name="email">
+  | <input type="password" name="password">
+  | <input type="submit">
+  | </form>
+  h3= signup_message
+  | </div>

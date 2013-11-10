@@ -1,0 +1,67 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://cdn.firebase.com/v0/firebase.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js')
+  body
+    | <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+    |   <div class="container">
+    |     <div class="navbar-header">
+    a(class='navbar-brand', href='#')= title
+    |     </div>
+    |   </div>
+    | </header>
+    | <div class="content container">
+    |   <div class="row">
+    |       <div class="col-md-5">
+    |           <div class="panel panel-default" id="compose">
+    |               <div class="panel-heading">
+    h4(class='panel-title') Compose a Quack
+    |               </div>
+    |               <div class="panel-body">
+    |                   <form action="javascript:void(0);" onsubmit="return formSubmit(this);">
+    |                       <div class="form-group">
+    |                           <textarea class="form-control" placeholder="Compose new quack..." name="quack" rows="3"></textarea>
+    |                       </div>
+    |                       <button type="submit" class="btn btn-default">Quack</button>
+    |                   </form>
+    |               </div>
+    |           </div>
+    |       </div>
+    |       <div class="col-md-7">
+    |           <div class="panel panel-default" id="quacksDiv">
+    |               <div class="panel-heading">
+    h4(class='panel-title') Recent Quacks
+    |               </div>
+    |               <div class="panel-body" id="quacks">
+    |               </div>
+    |           </div>
+    |       </div>
+    |   </div>
+    | </div>
+
+    script(type='text/javascript').
+      var tweetRef = new Firebase('https://quacker.firebaseio.com/quacks');
+      tweetRef.on('child_added', function(snapshot) {
+        var entry = snapshot.val();
+        displayTweet(entry.quack);
+      });
+      function displayTweet(quack) {
+        window.scrollTo(0, 0);
+        $('<div class="quack">').text(quack).prependTo($('#quacks')).hide().slideDown("slow");
+      };
+      function formSubmit(form) {
+        var url = "/quack";
+        var params = "quack="+form.quack.value;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("POST", url, true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.onreadystatechange = function() {//Call a function when the state changes.
+            if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                $('form').find("input[type=text], textarea").val("");
+            }
+        }
+        xmlhttp.send(params);
+      }
