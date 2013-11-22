@@ -1,19 +1,22 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Quacker : Twitter variant using node.js and firebase used for teaching node.js" />
+	<head>
+		<meta charset='utf-8' />
+		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+		<meta name="description" content="Quacker : Twitter variant using node.js and firebase used for teaching node.js" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+		<title>Quacker</title>
 
-    <title>Quacker</title>
-  </head>
+		<link rel="stylesheet" href="stylesheets/stylesheet.css">
+		<link rel="stylesheet" href="stylesheets/reveal.css">
+		<link rel="stylesheet" href="stylesheets/theme/default.css" id="theme">
 
-  <body>
+	</head>
 
-    <!-- HEADER -->
+	<body>
+		<!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/hmaidasani/Quacker">View on GitHub</a>
@@ -27,30 +30,940 @@
             </section>
         </header>
     </div>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/161672/youhavebeenhacked.png" style="width: 499.33463661607254px; height: 300.84472041100446px; max-height: none; max-width: none;">
+					</h1>
+					<h1>
+					<font style="font-size: 60px;">
+					<b>Welcome to the first hacktorial</b>
+					</font>
+					</h1>
+					<div>
+						<font style="font-size: 42px;">Presenter: Hitesh Maidasani</font>
+					</div>
+					<div>
+						<font style="font-size: 42px;">Terrapin Hackers</font>
+					</div>
+					<div>
+						<p class="p1">
+							<span class="s1">
+							<a href="https://www.facebook.com/groups/hackersofmaryland/" target="_blank">facebook.com/groups/hackersofmaryland</a>
+							</span>
+						</p>
+					</div>
+				</section>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a class="anchor"><span class="octicon octicon-link"></span></a>The Tutorial for building Quacker</h3>
+				<section>
+					<h2>Hacking</h2>
+					<div style="text-align: left; ">
+						<ul>
+							<li>Hacktorials</li>
+							<li>
+							<span>Hack nights</span>
+							</li>
+							<li>
+							<span>
+							<p class="p1">
+								<span class="s1">Hackathons (win them too!)</span>
+							</p>
+							</span>
+							</li>
+							<li>
+							<p class="p1">
+								<span class="s1">= Terrapin Hackers</span>
+							</p>
+							</li>
+							<li>
+							<p class="p1">
+								<span>Join Facebook group and spread the word</span>
+							</p>
+							</li>
+							<li>
+							<p class="p1">
+								<span>
+								</span>
+							</p>
+							<p class="p1">
+								<span class="s1">Interested in presenting or organizing Hacktorials?</span>
+							</p>
+							</li>
+						</ul>
+					</div>
+				</section>
 
-<a class="embedly-card" href="https://speakerdeck.com/hmaidasani/node-dot-js-for-noobs-build-twitter-using-node-dot-js">Node.js for Noobs: Build Twitter using Node.js</a>
-<script>!function(a){var b="embedly-platform",c="script";if(!a.getElementById(b)){var d=a.createElement(c);d.id=b,d.src=("https:"===document.location.protocol?"https":"http")+"://cdn.embedly.com/widgets/platform.js";var e=document.getElementsByTagName(c)[0];e.parentNode.insertBefore(d,e)}}(document);</script>
+				<section>
+					<h2>
+					<br>
+					</h2>
+					<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/161953/nodejs.png">
+				</section>
 
-<iframe src="http://slid.es/hiteshmaidasani/deck/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				<section>
+					<h1>
+					<span style="font-size: 135.72px;">
+					<br>
+					</span>
+					</h1>
+					<h1>
+					<span style="font-size: 135.72px;">Background&nbsp;</span>
+					<br>
+					</h1>
+					<h1>&amp;&nbsp;</h1>
+					<h1>overview</h1>
+				</section>
 
-      </section>
-    </div>
+				<section>
+					<img src="http://jamesor.com/wp-content/uploads/2012/05/nodejs.jpg" class="absolute-element" style="position: absolute; max-height: none; max-width: none; width: 389.2463767257043px; height: 654.414117739116px; z-index: 4; left: 526px; top: 7px;">
+					<h2 class="absolute-element" style="position: absolute; width: 427px; height: 127.66252587991718px; z-index: 4; left: 9px; top: 87px; max-height: none; max-width: none;">What is node.js?<br>
+					</h2>
+					<h3 class="absolute-element" style="position: absolute; width: 427px; height: 401.3271221532091px; z-index: 4; left: 10px; top: 241px; max-height: none; max-width: none;">
+					<font style="font-size: 32px; line-height: 30px;">A javascript platform<br>
+					<br>
+					Can build lightweight web applications<br>
+					<br>
+					No appache needed!</font>
+					</h3>
+				</section>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Quacker maintained by <a href="https://github.com/hmaidasani">hmaidasani</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+				<section>
+					<h2>What is a web server?</h2>
+					<div style="text-align: left; ">
+						<ul>
+							<li>
+							<p class="p1">
+								<span class="s1">Handles web requests and routes them to appropriate pages</span>
+							</p>
+							</li>
+							<li>
+								<span>Stores additional application data</span>
+							</li>
+							<ul>
+								<li>
+									<span>
+										<p class="p1">
+											<span class="s1">databases</span>
+										</p>
+									</span>
+								</li>
+							</ul>
+						</ul>
+					</div>
+				</section>
 
-    
+				<section>
+					<h2>What is a web server simplified?</h2>
+					<div>
+						<font style="font-size: 32px;">facebook.com</font>
+					</div>
+					<div>
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/161991/facebook.com.png" style="width: 702.3345865633959px; height: 489.6832297277747px; max-height: none; max-width: none;">
+						<br>
+					</div>
+				</section>
 
-  </body>
+				<section>
+					<h2>What is a web server simplified?</h2>
+					<div>
+						facebook.com/messages
+					</div>
+					<div>
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/161997/facebook.com_messages.png" style="width: 702.3345865633959px; height: 489.6832297277747px; max-height: none; max-width: none;">
+						<br>
+					</div>
+				</section>
+
+				<section>
+					<h2>What is front-end &amp; back-end?</h2>
+					<div style="text-align: right; ">
+						Back-End or Server-Side &nbsp; &nbsp; &nbsp;
+					</div>
+					<div style="text-align: center;">
+						<img src="http://static.gtmetrix.com/r115/resources/why-is-my-page-slow/front-back-end.png">
+						<br>
+					</div>
+				</section>
+
+				<section>
+					<img src="http://jamesor.com/wp-content/uploads/2012/05/nodejs.jpg" class="absolute-element" style="position: absolute; max-height: none; max-width: none; width: 389.2463767257043px; height: 654.414117739116px; z-index: 4; left: 526px; top: 7px;">
+					<h2 class="absolute-element" style="position: absolute; width: 427px; height: 127.66252587991718px; z-index: 4; left: 9px; top: 87px; max-height: none; max-width: none;">What does that mean though?<br>
+					</h2>
+					<h3 class="absolute-element" style="position: absolute; width: 427px; height: 401.3271221532091px; z-index: 4; left: 10px; top: 350px; max-height: none; max-width: none;">
+						<font style="font-size: 32px;">
+							It's complicated
+							<br>
+
+							i/o=input/output
+						</font>
+					</h3>
+				</section>
+
+				<section>
+					<h2>Imagine facebook on a terrible server</h2>
+					<div>
+						<p class="p1">
+							<span class="s1">When looking up you’re news feed in the database, it just stalls because the database takes too long</span>
+						</p>
+						<p class="p1">
+							<span class="s1">
+							</span>
+						</p>
+						<p class="p1">
+							<span class="s1">Most servers do that! They wait for I/O to finish</span>
+						</p>
+						<p class="p1">
+							<span class="s1">
+							<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162031/blocking.png" style="width: 519.200797810656px; height: 372.94409929299206px; max-height: none; max-width: none;">
+							<br>
+							</span>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Event driven server side i/o</h2>
+					<div>
+						<img src="https://lh4.googleusercontent.com/pwtI1uBbT5Gthva6sGtKu_L3Ih3w2oxt-LA28mEamjrz6dKl87NFKiTxgzlHfGhIuFF107PxLFeWMdc8z3dchWtpqpcaqE4D4nrcSx3UQmfEDmJTL_LzNKQVjg" style="width: 714.3312628540687px; height: 533.7336103604584px; max-height: none; max-width: none;">
+						<br>
+					</div>
+				</section>
+
+				<section>
+					<h2>Event driven server side i/o</h2>
+					<div style="text-align: left; ">
+						<img src="https://lh4.googleusercontent.com/pwtI1uBbT5Gthva6sGtKu_L3Ih3w2oxt-LA28mEamjrz6dKl87NFKiTxgzlHfGhIuFF107PxLFeWMdc8z3dchWtpqpcaqE4D4nrcSx3UQmfEDmJTL_LzNKQVjg" style="width: 354.78964996032425px; height: 261.6190475331577px; max-height: none; max-width: none;">
+						<br>
+					</div>
+					<div style="text-align: left; ">
+						<ul>
+							<li>Other web frameworks can do this, but
+							</li>
+							<ul>
+								<li>
+								<span>
+								<p class="p1">
+									<span class="s1">with a lot of setup and coding and thread management</span>
+								</p>
+								</span>
+								</li>
+							</ul>
+							<li>Node.js does it all for you!</li>
+							<li>And can build scalable applications quickly
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2>When should you use node.js?</h2>
+					<div>
+						<p class="p1" style="text-align: left; ">
+						</p>
+						<ul>
+							<li>
+							<span>Great for real-time applications:</span>
+							<br>
+							</li>
+							<ul>
+								<li>
+								<span>online games, collaboration tools, …</span>
+								</li>
+								<li>
+								<span>anything quick and event driven</span>
+								</li>
+							</ul>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>WHEN SHOULD YOU NOT USE NODE.JS?</h2>
+					<div>
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span style="text-align: center;">Your server request is dependent on heavy CPU consuming algorithm/job</span>
+							<br>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h1>Node.js tutorial</h1>
+					<div>
+						<p class="p1">
+							<span class="s1">Available at: <a href="http://hmaidasani.github.io/Quacker/" target="_blank">
+							<span class="s2">hmaidasani.github.io/Quacker</span>
+							</a>
+							</span>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Purpose</h2>
+					<div>
+						<p class="p1" style="text-align: left; ">
+						</p>
+						<ul>
+							<li>
+							<span>Learn basics of Node.js</span>
+							<br>
+							</li>
+							<ul>
+								<li>
+								<span>avoiding databases to keep things simple</span>
+								</li>
+							</ul>
+							<li>
+							<span>First start with hello world, and then go on to twitter feed</span>
+							<br>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Things needed</h2>
+					<div class="absolute-element" style="position: absolute; width: 302px; height: 188.16356107660457px; z-index: 6; left: 20px; top: 434px; max-height: none; max-width: none;">
+						<img src="http://ncowie.files.wordpress.com/2007/11/borat_thumbs.jpg">
+						<br>
+					</div>
+					<div class="absolute-element" style="position: absolute; width: 302px; height: 188.16356107660457px; z-index: 6; left: 635px; top: 431px; max-height: none; max-width: none;">
+						<img src="http://c758482.r82.cf2.rackcdn.com/sublime_text_icon_2181.png">
+						<br>
+					</div>
+					<div class="absolute-element" style="position: absolute; width: 789px; height: 615px; z-index: 5; left: -1px; top: 76px; max-height: none; max-width: none;">
+						<p class="p1" style="text-align: left; ">
+						</p>
+						<ul>
+							<li>
+							<span>a pair of&nbsp;hands</span>
+							<br>
+							</li>
+							<li>
+							<span>a computer (mac, windows, linux, etc.)</span>
+							<br>
+							</li>
+							<li>
+							<span>a text editor (</span>
+							<a href="http://www.sublimetext.com/2" target="_blank">
+							<span class="s2">sublimetext.com/2</span>
+							</a>
+							<span>)</span>
+							<br>
+							</li>
+							<li>
+							<span>a hacker’s instinct</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>Step 1 - INSTALL NODE.JS
+					</h2>
+					<div>
+						<p class="p1">
+							<span class="s1">
+							<a href="http://nodejs.org/" target="_blank">nodejs.org</a>
+							</span>
+						</p>
+					</div>
+					<div>
+						<img src="http://nodejs.org/images/logos/nodejs-1280x1024.png" style="width: 388.02709945631443px; height: 310.30020695344757px; max-height: none; max-width: none;">
+						<span>
+						<br>
+						</span>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 2 – INSTALL EXPRESS</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>A simple web application framework for node.js</span>
+							<br>
+							</li>
+							<li>
+							<span>Launch Terminal or Command Prompt</span>
+							<br>
+							</li>
+							<li>
+							<span>Run the following command (you can copy text)</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px;">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code ><span class="unselection" unselectable="on">$ </span>sudo npm install -g express</code>
+						</pre>
+					</div>
+					<div style="text-align: left;">
+						<p class="p1">
+						        <span class="s1">Windows users might have to first run:&nbsp;</span>
+						</p>
+						<pre><code>cd C:\Program Files\nodejs </code></pre>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 3 – Create an express project</h2>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px; ">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code ><span class="unselection" unselectable="on">$ </span>cd ~/Documents/<br><span class="unselection" unselectable="on">$ </span>mkdir nodeProjects<br><span class="unselection" unselectable="on">$ </span>cd nodeProjects<br><span class="unselection" unselectable="on">$ </span>express nodetest1</code>
+						</pre>
+					</div>
+					<div style="text-align: left; ">
+						<p class="p1">
+						        <span class="s1">Windows users, if cd ~/Documents gives errors, run</span>
+						</p>
+						<pre><code>cd C:\Users\[your user name]\Documents</code></pre>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 4 – Install Dependencies</h2>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px; ">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code ><span class="unselection" unselectable="on">$ </span>cd nodetest1/<br><span class="unselection" unselectable="on">$ </span>npm install        </code>
+						</pre>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 5 – Run Your First Node Web App</h2>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px; ">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code ><span class="unselection" unselectable="on">$ </span>node app.js       </code>
+						</pre>
+					</div>
+					<div style="text-align: left; ">
+						<p class="p1">
+						        <span class="s1">Windows users might get a prompt to allow access</span>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>View in the browser</h2>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/browser1.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>Explore the project</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>Open sublime or finder (documents)</span>
+							<br>
+							</li>
+							<ul>
+								<li>
+								<span>inside sublime, Open (CMD+O) —> entire directory</span>
+								</li>
+							</ul>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/sublime1.png">
+					</div>
+				</section>
+				
+				<section>
+					<h2>Explore app.js</h2>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/sublime2.png">
+					</div>	
+				</section>
+
+				<section>
+					<h2>Explore app.js</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>Routing</span>
+							<br>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/sublime3.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>Add hello world</h2>
+				</section>
+
+				<section>
+					<h2>STEP 6 - ADD HELLO WORLD ROUTE</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>Go to File>New File</span>
+							</li>
+							<li>
+							<span>Copy contents of views/index.jade, and paste into new file</span>
+							</li>
+							<li>
+							<span>Save as views/helloworld.jade in views directory</span>
+							</li>
+							<li>
+							<span>Repeat but copy routes/index.js, save as routes/helloworld.js in routes directory, and make following changes</span>
+							</li>
+							
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/sublime4.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 7 - ADD HELLO WORLD ROUTE In App.js</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>Edit app.js and add the highlighted lines</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/sublime5.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 8 - Run Hello World</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>localhost:3000/helloworld</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/browser2.png">
+					</div>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>but might get this error …</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 8 - Run Hello World contd.</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>In terminal quit process (CTRL+C)</span>
+							</li>
+							<li>
+							<span>Re-run node:</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px; ">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code ><span class="unselection" unselectable="on">$ </span>node app.js       </code>
+						</pre>
+					</div>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>now refresh your browser …</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/browser3.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 9 - INSTALL SUPERVISOR!</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>to avoid constant restarting of node with changes, run (CTRL+C in terminal) then run:</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px; ">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code ><span class="unselection" unselectable="on">$ </span>sudo npm install -g supervisor</code>
+						</pre>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 10 - RUN NODE WITH SUPERVISOR</h2>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px; ">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code ><span class="unselection" unselectable="on">$ </span>supervisor node app.js</code>
+						</pre>
+					</div>
+				</section>
+
+				<section>
+					<h1>Building Twitter</h1>
+				</section>
+
+				<section>
+					<h2>Let's call it Quacker</h2>
+					
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="http://pennyscribbler.files.wordpress.com/2012/02/quack10cm1.jpg" height=200px >
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 1 - CREATE PROJECT &amp; INSTALL DEPENDENCIES</h2>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px; ">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code><span class="unselection" unselectable="on">$ </span>cd ~/Documents/<br><span class="unselection" unselectable="on">$ </span>cd nodeProjects<br><span class="unselection" unselectable="on">$ </span>express quacker<br><span class="unselection" unselectable="on">$ </span>cd quacker<br><span class="unselection" unselectable="on">$ </span>npm install<br><span class="unselection" unselectable="on">$ </span>npm install firebase <span style="letter-spacing:2px; !important">—-</span>save</code>
+						</pre>
+					</div>
+					<div style="text-align: left; ">
+						<p class="p1">
+						        <span class="s1">Windows users, if cd ~/Documents gives errors, run</span>
+						</p>
+						<pre><code>cd C:\Users\[your user name]\Documents</code></pre>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 2 - UPDATE TITLE</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>Copy views/index.jade into views/quacks.jade</span>
+							</li>
+							<li>
+							<span>Change index.js to:</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/sublime6.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 3 - HANDLE QUACK SUBMISSION</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>Under routes/ create a new file called quack.js</span>
+							</li>
+							<li>
+							<span>Add the content from: (<a href="https://raw.github.com/hmaidasani/Quacker/master/routes/quack.js" target="_blank">raw.github.com/hmaidasani/Quacker/master/routes/quack.js</a>)</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/sublime7.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 4 - HANDLE QUACK SUBMISSION ROUTE IN APP.JS</h2>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/sublime8.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 5 - ADD FRONT-END</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>In views/quacks.jade, replace everything with:</span>
+							</li>
+							<li>
+							<span><a href="https://raw.github.com/hmaidasani/Quacker/master/views/quacks.jade" target="_blank">raw.github.com/hmaidasani/Quacker/master/views/quacks.jade</a></span>
+							</li>
+							<li>
+							<span>This will be the main page for quack submission and viewing</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 5 - ADD FRONT-END contd.</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>In public/stylesheets/style.css, replace everything with:</span>
+							</li>
+							<li>
+							<span><a href="https://raw.github.com/hmaidasani/Quacker/master/public/stylesheets/style.css" target="_blank">raw.github.com/hmaidasani/Quacker/master/public/stylesheets/style.css</a></span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>FRONT-END EXPLAINED</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>quacks.jade</span>
+							</li>
+							<ul>
+								<li>
+								<span>quack submission through form and ajax request to routes/quack.js (we wrote this)</span>
+								</li>
+								<li>
+								<span>read and pull quacks from database</span>
+								</li>
+							</ul>
+							<li>
+							<span>style.css</span>
+							</li>
+							<ul>
+								<li>
+								<span>makes quacks.jade look pretty in the browser</span>
+								</li>
+							</ul>
+						</ul>
+						<p>
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2>STEP 6: RUN THE APP</h2>
+					<div style="text-align: left; position: relative; width: 569px; height: 356px; z-index: 4; left: 18px; ">
+						<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/hiteshmaidasani/images/162096/terminal.png">
+						<pre class="coding">
+							<code><span class="unselection" unselectable="on">$ </span>supervisor node app.js</code>
+						</pre>
+					</div>
+				</section>
+
+				<section>
+					<div style="text-align: left; position: relative; z-index: 4; left: 18px; ">
+						<img src="images/quacker/browser4.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>THIS IS AWESOME!</h2>
+					<div style="text-align: left;">
+						<p class="p1">
+						</p>
+						<ul>
+							<li>
+							<span>You all are running instances of the server</span>
+							</li>
+							<li>
+							<span>In real applications, there will be just one*</span>
+							</li>
+							<li>
+							<span>There are multiple front-end instances in each browser,</span>
+							</li>
+							<li>
+							<span>but the data is shared, and pushed to each one</span>
+							</li>
+							<li>
+							<span>by Firebase!</span>
+							</li>
+						</ul>
+						<p>
+						</p>
+					</div>
+					<div class="absolute-element" style="position: absolute; width: 302px; height: 188.16356107660457px; z-index: 6; left: 635px; top: 431px; max-height: none; max-width: none;">
+						<img src="http://tctechcrunch2011.files.wordpress.com/2013/06/firebase-logo.jpeg?w=243">
+						<br>
+					</div>
+				</section>
+
+				<section>
+					<h1>What's Next?</h1>
+				</section>
+
+				<section>
+					<h2>YOU’VE BUILT YOUR OWN WEB APPLICATION</h2>
+					<ul>
+						<li>
+						<span>Add more features</span>
+						</li>
+						<ul>
+							<li>
+							<span>user accounts</span>
+							</li>
+							<li>
+							<span>database (mongodb)</span>
+							</li>
+							<li>
+							<span>other pages/routes for hashtags</span>
+							</li>
+						</ul>
+						<li>
+						<span>Learn the components</span>
+						</li>
+						<ul>
+							<li>
+							<span>html, css and javascript, jQuery</span>
+							</li>
+							<li>
+							<span>firebase</span>
+							</li>
+						</ul>
+						<li>
+						<span>Host it on github, heroku, etc.</span>
+						</li>
+						<li>
+						<span>Basically, attend our next Hacktorials</span>
+						</li>
+						<li>
+						<span>And keep hacking!</span>
+						</li>
+					</ul>
+					<div class="absolute-element" style="position: absolute; width: 302px; height: 188.16356107660457px; z-index: 6; left: 800px; top: 150px; max-height: none; max-width: none;">
+						<img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/011/296/success_baby.jpg?1251168454">
+					</div>
+					<div class="absolute-element" style="position: absolute; z-index: 6; left: 90%; height:100px; width:100px; top: 500px; max-height: none; max-width: none;">
+						<img src="images/quacker/logo_th.png">
+					</div>
+				</section>
+
+				<section>
+					<h2>ACKNOWLEDGMENTS</h2>
+					<ul>
+						<li>
+						<span>UMD CS Staff</span>
+						</li>
+						<li>
+						<span>Terrapin Hackers organizers</span>
+						</li>
+						<li>
+						<span>And thanks for attending!!!</span>
+						</li>
+					</ul>
+					<div class="absolute-element" style="position: absolute; z-index: 6; left: 10%; height:100px; width:100px; top: 500px; max-height: none; max-width: none;">
+						<img src="images/quacker/logo_umd.png">
+					</div>
+					<div class="absolute-element" style="position: absolute; z-index: 6; left: 90%; height:100px; width:100px; top: 500px; max-height: none; max-width: none;">
+						<img src="images/quacker/logo_th.png">
+					</div>
+				</section>
+
+
+			</div>
+
+		</div>
+
+		<script src="javascripts/head.min.js"></script>
+		<script src="javascripts/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				center: true,
+				history: true,
+				progress: true,
+				controls: true,
+				// rtl: true,
+
+				transition: 'linear',
+				// transitionSpeed: 'slow',
+				// backgroundTransition: 'linear'
+			});
+
+		</script>
+
+	</body>
 </html>
